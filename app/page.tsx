@@ -3,14 +3,14 @@
 import { useState } from "react";
 
 export default function Home() {
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(true);
 
   return (
     <main
       className={`min-h-screen transition-all duration-500 ${
-        dark
-          ? "bg-slate-950 text-white"
-          : "bg-slate-50 text-slate-900"
+       dark
+  ? "bg-slate-950 text-white"
+  : "bg-gradient-to-br from-slate-50 via-white to-blue-50 text-slate-900"
       }`}
     >
       {/* Navbar */}
